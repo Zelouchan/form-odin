@@ -1,3 +1,11 @@
+    :root {
+        --font-colour: #003049;
+        --bg-colour-one: #729ea1;
+        --form-colour: #dfbe99;
+        --coral-colour: #ec9192;
+        --sage-colour: #b5bd89;
+    }
+    
     body {
     display: flex;
     justify-content: center;
@@ -7,6 +15,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    color: var(--font-colour);
   }
   
   main {
@@ -14,21 +23,97 @@
     grid-template-columns: 1fr 2fr;
     width: 80vw; 
     height: 100vh; 
-    border: 2px solid #ddd; /* Optional border for visibility */
+    position: relative;
+
   }
   
   .left, 
   .right {
-    display: flex; /* Optional: Use flexbox to organize content */
+    display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    border: 2px solid black; 
-    background-color: #f0f0f0; 
+    background-color: #D6DABE; 
     text-decoration: none;
   }
 
   .left {
     background-image: url(./subtle-prism.svg);
     background-size: auto;
+    height: 100%;
+    background-position: right;
+
   }
+
+ .bg-text a:hover, a:visited, a:link, a:active {
+      text-decoration: none;
+      color: black;
+      font-size: xx-small;
+  }
+
+  .bg-text {
+    text-justify: center;
+    text-align: center;
+  }
+
+#bee {
+    height: 2.8rem;
+    align-self: center;    
+}
+  .lside {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10% 10%;
+    font-size: 3rem;
+    background: rgba(0, 48, 73, 0.3);
+    color: var(--bg-colour-one);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.right {
+    display: flex;
+}
+
+.right p {
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signup p {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid black;
+}
+
+#signup [for] {
+    border: 2px solid red;
+    box-sizing: border-box;
+    display: block;
+}
+
+textarea {
+    width: 50%;
+    border: 2px solid yellow;
+}
+
+#signup {
+    background-color: var(--sage-colour);
+    width: 100%;
+    border: 1px solid var(--sage-colour);
+    border-radius: 0.3em;
+    display: inline-block;
+}
+
+#signup p,
+#signup h3,
+#signup button,
+.smallText {
+    margin: 3%;
+}
+
+.right {
+margin: 0%;
+}
+  
